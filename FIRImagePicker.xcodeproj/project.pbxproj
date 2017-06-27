@@ -12,9 +12,12 @@
 		59126A801F027A2C003AD3A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59126A7E1F027A2C003AD3A3 /* Main.storyboard */; };
 		59126A821F027A2C003AD3A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59126A811F027A2C003AD3A3 /* Assets.xcassets */; };
 		59126A851F027A2C003AD3A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59126A831F027A2C003AD3A3 /* LaunchScreen.storyboard */; };
+		59126A8D1F02A884003AD3A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59126A8C1F02A884003AD3A3 /* GoogleService-Info.plist */; };
+		A66E37EB97A7A36A96A7B5DD /* Pods_FIRImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A669627BA13AF14D46072F5B /* Pods_FIRImagePicker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D861A8245EA043F783CD523 /* Pods-FIRImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIRImagePicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIRImagePicker/Pods-FIRImagePicker.release.xcconfig"; sourceTree = "<group>"; };
 		59126A771F027A2C003AD3A3 /* FIRImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIRImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59126A7A1F027A2C003AD3A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59126A7C1F027A2C003AD3A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		59126A811F027A2C003AD3A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59126A841F027A2C003AD3A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59126A861F027A2C003AD3A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59126A8C1F02A884003AD3A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A669627BA13AF14D46072F5B /* Pods_FIRImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIRImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9460A62AF9620B6FEF6DDEE /* Pods-FIRImagePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIRImagePicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIRImagePicker/Pods-FIRImagePicker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66E37EB97A7A36A96A7B5DD /* Pods_FIRImagePicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30D7D4863378D859C57DEA9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9460A62AF9620B6FEF6DDEE /* Pods-FIRImagePicker.debug.xcconfig */,
+				2D861A8245EA043F783CD523 /* Pods-FIRImagePicker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		59126A6E1F027A2C003AD3A3 = {
 			isa = PBXGroup;
 			children = (
 				59126A791F027A2C003AD3A3 /* FIRImagePicker */,
 				59126A781F027A2C003AD3A3 /* Products */,
+				30D7D4863378D859C57DEA9B /* Pods */,
+				F17553918FB2E4EB19C17339 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +76,19 @@
 				59126A7C1F027A2C003AD3A3 /* ViewController.swift */,
 				59126A7E1F027A2C003AD3A3 /* Main.storyboard */,
 				59126A811F027A2C003AD3A3 /* Assets.xcassets */,
+				59126A8C1F02A884003AD3A3 /* GoogleService-Info.plist */,
 				59126A831F027A2C003AD3A3 /* LaunchScreen.storyboard */,
 				59126A861F027A2C003AD3A3 /* Info.plist */,
 			);
 			path = FIRImagePicker;
+			sourceTree = "<group>";
+		};
+		F17553918FB2E4EB19C17339 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A669627BA13AF14D46072F5B /* Pods_FIRImagePicker.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59126A891F027A2C003AD3A3 /* Build configuration list for PBXNativeTarget "FIRImagePicker" */;
 			buildPhases = (
+				4F1471B8E46EA5976EA097D1 /* [CP] Check Pods Manifest.lock */,
 				59126A731F027A2C003AD3A3 /* Sources */,
 				59126A741F027A2C003AD3A3 /* Frameworks */,
 				59126A751F027A2C003AD3A3 /* Resources */,
+				7B21D8FCC169E8CFA857854D /* [CP] Embed Pods Frameworks */,
+				F3E2DD107B855A93CC548B36 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				59126A851F027A2C003AD3A3 /* LaunchScreen.storyboard in Resources */,
+				59126A8D1F02A884003AD3A3 /* GoogleService-Info.plist in Resources */,
 				59126A821F027A2C003AD3A3 /* Assets.xcassets in Resources */,
 				59126A801F027A2C003AD3A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F1471B8E46EA5976EA097D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B21D8FCC169E8CFA857854D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIRImagePicker/Pods-FIRImagePicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3E2DD107B855A93CC548B36 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIRImagePicker/Pods-FIRImagePicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59126A731F027A2C003AD3A3 /* Sources */ = {
@@ -259,6 +338,7 @@
 		};
 		59126A8A1F027A2C003AD3A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9460A62AF9620B6FEF6DDEE /* Pods-FIRImagePicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 876L3LH7TJ;
@@ -272,6 +352,7 @@
 		};
 		59126A8B1F027A2C003AD3A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D861A8245EA043F783CD523 /* Pods-FIRImagePicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 876L3LH7TJ;
@@ -302,6 +383,7 @@
 				59126A8B1F027A2C003AD3A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
